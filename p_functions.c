@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  *p_char - function that print a character
  *@arg: list of parameters
@@ -61,32 +61,25 @@ int p_int(va_list arg)
 	int factor = 1;
 
 	a = va_arg(arg, int);
-	if (a <= INT_MAX && a >= INT_MIN)
+	if (a < 0)
 	{
-		if (a < 0)
-		{
-			a = a * (-1);
-			_putchar('-');
-			i++;
-		}
-		temp = a;
-		i = 0;
-		while (temp)
-		{
-			temp = temp / 10;
-			factor = factor * 10;
-		}
-		while (factor > 1)
-		{
-			factor = factor / 10;
-			_putchar((a / factor) + '0');
-			a = a % factor;
-			i++;
-		}
-		return (i);
+		a = a * (-1);
+		_putchar('-');
+		i++;
 	}
-	else
+	temp = a;
+	i = 0;
+	while (temp)
 	{
-		return (-1);
+		temp = temp / 10;
+		factor = factor * 10;
 	}
+	while (factor > 1)
+	{
+		factor = factor / 10;
+		_putchar((a / factor) + '0');
+		a = a % factor;
+		i++;
+	}
+	return (i);
 }

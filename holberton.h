@@ -1,8 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
 #include <stdarg.h>
-#include <limits.h>
 
 /**
  * struct format_func - Struct with format with its respective function
@@ -23,4 +22,4 @@ int p_str(va_list);
 int p_int(va_list);
 int p_percent(va_list);
 
-#endif /* main_H */
+#endif /* HOLBERTON_H */
