@@ -1,36 +1,36 @@
-#ifndef MAIN_H
-#define MAIN_H
-
+#ifndef PRINTF
+#define PRINTF
 #include <stdarg.h>
-#include <stddef.h>
+#include <string.h>
 #include <stdlib.h>
-
+#include <stdio.h>
+#include <stddef.h>
+#include "main.h"
+#include <stdarg.h>
 /**
- * struct structprint - structure containing
- * @q: the location and method to translate data to characters.
- * @u: print function for specific type.
- *
- * Return: int
+ * hexa - struct
+ * @i: integer
+ * @c: characters
  */
-typedef struct structprint
+typedef struct rot13
 {
-	char *q;
-	int (*u)(char *format, va_list);
-} structype;
+	char c;
+} rt;
+/**
+ * prf -prf
+ * @c: characters
+ * @f: pointer to function
+ */
+typedef struct prf
+{
+	char c;
+	int (*f)(va_list p);
 
-int _putchar(char ch);
-int _puts(char *string);
-int printc(char *format, va_list);
-int printstr(char *format, va_list);
-int (*driver(char *format))(char *format, va_list);
-int _printf(char *format, ...);
-int printint(char *format, va_list pa);
-int integer(int number);
-int contadordigit(int number);
-int _abs(int number);
-int printpercent(char *format, va_list pa);
-int printhex(char *format, va_list);
-int printHEX(char *format, va_list);
-int printocta(char *format, va_list);
-int print_unsign(char *format, va_list);
+} pr;
+int _printf(const char *format, ...);
+int print_int(va_list i);
+int print_string(va_list s);
+int print_char(va_list c);
+int _putchar(char c);
+int print_percent(va_list c);
 #endif

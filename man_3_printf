@@ -1,35 +1,18 @@
-./"This is the manpage of the _printf project in ALX School
-.TH _PRINTF "3" "15 April 2022" "0x11" "_printf man page"
-.SH NAME
-_printf - print data and format
-.SH SYNOPSIS
-.B printf FORMAT [ARGUMENT]...
-.SH DESCRIPTION
-Prints ARGUMENT(s) based on FORMAT
+_PRINTF(3)
 
-If format includes format specifiers (subsequences beginning with %), the additional arguments following format are formatted and inserted in the resulting string replacing their respective specifiers.
+NAME
+	_printf - formats and prints data
 
-_printf will also take an indefinite amount of arguments.
+SYNOPSIS
+	_printf FORMAT [ARGUMENTS] ...
 
-Example:
-_printf("%s", text);
+DESCRIPTION
+        prints arguments of the given format
 
-In the Example print the value of text with %s give the format of text.
+	FORMAT controls the output
 
-.B The conversion specifiers
+EXAMPLES
+	_print("Hola mundo %d", n);
 
-.IP %c
-- prints character.
-.IP %s
-- prints string.
-.IP %%
-- prints percentage symbol.
-.IP %d
-- prints decimal.
-.IP %i
-- prints integer number.
-
-.SH SEE ALSO
-.I printf (3)
-.SH AUTHOR
-Asrat Asmelash, Yohannes Soressa
+AUTHORS
+	Made by Alex Senges and Leandro Irigoyen
