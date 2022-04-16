@@ -63,6 +63,5 @@ _printf("%d\n", num1);
 
 # Authors
 
-Mónica Ortíz Alvarez [GitHub](https://github.com/monicajoa)
+Baye cheikh fall [GitHub](https://github.com/baye94)
 
-Nicolas Quinchia Osorio [GitHub](https://github.com/nicolasquinchia)
