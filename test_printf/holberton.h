@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef main_H
+#define main_H
 
 #include <stdarg.h>
 /**
@@ -20,4 +20,4 @@ void (*_get_format(char *fmt))(va_list ls_pa);
 void p_char(va_list);
 void p_str(va_list);
 
-#endif /* HOLBERTON_H */
+#endif /* main_H */

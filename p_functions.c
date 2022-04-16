@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *p_char - function that print a character
  *@arg: list of parameters
